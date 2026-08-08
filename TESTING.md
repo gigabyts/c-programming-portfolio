@@ -13,5 +13,5 @@ Document how you tested each artifact. Add or remove rows as needed.
  
  PASS or FAIL is what the test conditon should result in, if the PASS/FAIL meant as in does expected test behave as intended 
  then all the tests PASS as they behave correctly.
-## Fresh-Clone Verification
+
 
