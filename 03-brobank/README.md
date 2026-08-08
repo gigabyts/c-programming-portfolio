@@ -6,13 +6,12 @@ BroBank is a banking program for the command line. It supports deposits, withdra
 
 ## Key Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+- Multi account Persistence of bank records
+- Ability to undo transactions and check if a transaction had been made between two accounts previously.
+- Feature to allow bank transfers between two accounts and validation of new deposits and withdrawls. 
 
 ## Technical Highlights
-
-[Mention the strongest concepts shown in your project: modular C, structures, queues, stacks, sorting, file persistence, graph traversal, testing, or others.]
+ modular C, usage of pointers, structures, queues, stacks, sorting, file persistence, graph traversal, testing, and file clean/reset mechanism.
 
 ## Project Structure
 
@@ -36,11 +35,15 @@ gcc -Wall -Wextra -std=c11 main.c bank.c adt.c sort.c transaction_log.c persist.
 ```bash
 ./brobank < sample_input.txt > sample_output.txt
 ```
-Change the above to see different inputs or follow a similar process to get your own input and output.
+Change the above to see different inputs or manually compile the file and repeat a similar process to get your own input and output.
 
 ## Design and Testing
 
-[Describe one important design decision, one meaningful test, and one bug you fixed.]
+The main design choice was routing every transaction through the same processing pipeline instead of editing balances directly, so nothing can update an account without passing validation first. I also made the transaction history feature reuse that same undo log as its source instead of keeping a second parallel log, so theres only one place that actually records what happened, rather than keeping two logs that could go out of sync with each other.
+
+For testing I ran a normal deposit and transfer and checked the right accounts updated, ran BFS and confirmed it returned 1 hop for a direct transfer, tried withdrawing more than the balance and confirmed it got rejected instead of going negative, saved then reloaded in a separate run of the program to confirm persistence actually works and not just in memory, and reset to confirm it wipes both the balances and the saved files on disk.
+
+One bug I actually found while merging everything together: undo correctly reverses the balances on an undone transfer, but it doesn't clear the edge it added to the transfer graph. Hence, BFS/DFS will still say two accounts are connected even after you undo the transfer between them. I left this in on purpose instead of removing it, since whether an undone transfer should still count is a big question and not an obvious mistake, so I'm just documenting it here as a known limitation and important for a real bank to have on record.
 
 ## Acknowledgments
 
