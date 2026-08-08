@@ -1,0 +1,122 @@
+No saved data found. Starting fresh with 4 accounts.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Account: Amount: Success.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Account: Amount: Success.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: From account: To account: Amount: Success.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Source account: Destination account: Fewest transfer hops: 1
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Source account: Destination account: Reachable.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Sorted transaction amounts: -150.00 200.00 500.00
+Net total: 550.00
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Account 0: $350.00
+Account 1: $350.00
+Account 2: $0.00
+Account 3: $0.00
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: All data reset to 4 fresh accounts.
+
+=== BroBank ===
+1. Deposit
+2. Withdraw
+3. Transfer
+4. Undo last transaction
+5. Show balances
+6. Shortest transfer path between two accounts (BFS)
+7. Check reachability between two accounts (DFS)
+8. Show sorted transaction history
+9. Reset all data
+0. Save and quit
+Choice: Saved. Goodbye.
